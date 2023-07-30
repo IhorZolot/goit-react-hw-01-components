@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
 import {
   TransactionTable,
@@ -30,4 +31,15 @@ export const TransactionHistory = ({ items }) => {
       </TableBody>
     </TransactionTable>
   );
+};
+
+TransactionHistory.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
