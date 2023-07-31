@@ -5,11 +5,11 @@ import data from './assets/data.json';
 import friends from './assets/friends.json';
 import transactions from './assets/transactions.json';
 
-import { Profile } from './components/Profile';
-import { Container } from './components/Profile.styled';
-import { Statistics } from './components/Statistics';
-import { FriendList } from './components/FriendList';
-import {TransactionHistory} from  './components/TransactionHistory';
+import { Profile } from './components/Profile/Profile';
+import { Container } from './components/Profile/Profile.styled';
+import { Statistics } from './components/Statistics/Statistics';
+import { FriendList } from './components/Friends/FriendList';
+import {TransactionHistory} from  './components/Ttansactions/TransactionHistory';
 
 
 export const App = () => {
